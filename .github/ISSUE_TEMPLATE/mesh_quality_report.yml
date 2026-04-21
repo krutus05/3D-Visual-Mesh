@@ -1,0 +1,89 @@
+name: Mesh Quality Report
+description: Report a bad mesh result, weak topology, broken limbs, missing detail, or cleanup pain point.
+title: "[Mesh]: "
+labels:
+  - mesh-quality
+body:
+  - type: dropdown
+    id: app_version
+    attributes:
+      label: App version
+      options:
+        - 0.1.0
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: asset_type
+    attributes:
+      label: Subject type
+      options:
+        - Character
+        - Creature
+        - Vehicle
+        - Prop
+        - Hard Surface
+        - Organic
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: gpu_vendor
+    attributes:
+      label: GPU vendor
+      options:
+        - AMD
+        - NVIDIA
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: gpu_model
+    attributes:
+      label: GPU model
+      placeholder: RX 9070 XT / RTX 4070 / etc.
+    validations:
+      required: true
+  - type: input
+    id: triangle_target
+    attributes:
+      label: Triangle target used
+      placeholder: 20000 / Auto / Off
+  - type: input
+    id: sample_count
+    attributes:
+      label: Sample count used
+      placeholder: 1 / 2 / 3 / 4
+  - type: textarea
+    id: source_input
+    attributes:
+      label: Source input
+      description: Describe the reference images or views used.
+      placeholder: Front + left + back clean PNG views of a knight...
+    validations:
+      required: true
+  - type: textarea
+    id: main_problem
+    attributes:
+      label: Main quality problem
+      description: Explain the bad result clearly.
+      placeholder: Fingers fused together, feet flattened, cape tore, wheel ended up in the wrong place...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What should have looked better
+      placeholder: Better feet shape, cleaner cape silhouette, stronger symmetry...
+    validations:
+      required: true
+  - type: textarea
+    id: media
+    attributes:
+      label: Screenshots or mesh views
+      description: Paste image links or add screenshots that show the problem.
+  - type: textarea
+    id: extra_notes
+    attributes:
+      label: Extra notes
+      description: Any notes about Blender cleanup, export, or weird artifacts.

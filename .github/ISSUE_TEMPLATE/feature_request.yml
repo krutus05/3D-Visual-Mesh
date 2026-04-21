@@ -1,0 +1,30 @@
+name: Feature Request
+description: Suggest a new workflow, plugin, UI change, cleanup tool, or model-quality improvement.
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What do you want?
+      placeholder: I want a better Blender preview, texture pass, or cleaner topology cleanup option...
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why does it matter?
+      placeholder: This would help because...
+    validations:
+      required: true
+  - type: textarea
+    id: workflow
+    attributes:
+      label: Best workflow you imagine
+      placeholder: Step 1, step 2, step 3...
+  - type: textarea
+    id: extra
+    attributes:
+      label: Extra context
+      description: Add screenshots, examples, or references if helpful.

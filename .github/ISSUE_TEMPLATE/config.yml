@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Live Website
+    url: https://krutus05.github.io/3D-Visual-Mesh/
+    about: Official project site, downloads, and release links.
+  - name: Current Release
+    url: https://github.com/krutus05/3D-Visual-Mesh/releases/tag/v0.1.0
+    about: Download the current beta release.
+  - name: Optional Support
+    url: https://ko-fi.com/3dvisualmesh
+    about: Optional support for development.

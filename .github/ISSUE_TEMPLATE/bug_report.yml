@@ -1,0 +1,86 @@
+name: Bug Report
+description: Report an app error, setup failure, crash, or broken workflow.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: dropdown
+    id: app_version
+    attributes:
+      label: App version
+      options:
+        - 0.1.0
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: gpu_vendor
+    attributes:
+      label: GPU vendor
+      options:
+        - AMD
+        - NVIDIA
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: gpu_model
+    attributes:
+      label: GPU model
+      placeholder: RX 9070 XT / RTX 4070 / etc.
+    validations:
+      required: true
+  - type: input
+    id: vram
+    attributes:
+      label: VRAM
+      placeholder: 8 GB / 12 GB / 16 GB
+    validations:
+      required: true
+  - type: input
+    id: ram
+    attributes:
+      label: System RAM
+      placeholder: 16 GB / 32 GB / 64 GB
+    validations:
+      required: true
+  - type: input
+    id: cpu
+    attributes:
+      label: CPU
+      placeholder: Ryzen 5 7600X / Intel i7 / etc.
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      placeholder: Windows 11 / Windows 10 build number if known
+    validations:
+      required: true
+  - type: textarea
+    id: what_happened
+    attributes:
+      label: What happened
+      description: Explain the problem in simple steps.
+      placeholder: The app opened, I clicked Start 3D Mesh, then...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+      placeholder: I expected the app to finish and export a mesh.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error text or log text
+      description: Paste the exact error if you have it.
+      render: shell
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Paste screenshots or image links if helpful.

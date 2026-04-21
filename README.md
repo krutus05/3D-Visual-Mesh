@@ -1,5 +1,7 @@
 # 3DVisual Mesh (BETA) (Version 0.1.0) Files
 
+[Website](https://krutus05.github.io/3D-Visual-Mesh/) | [GitHub Release](https://github.com/krutus05/3D-Visual-Mesh/releases/tag/v0.1.0) | [Optional Support](https://ko-fi.com/3dvisualmesh)
+
 3DVisual Mesh is a practical local image-to-mesh helper for Windows. Results are not guaranteed to come out as a 100% finished production mesh every time, and many outputs still benefit from light cleanup or polish in Blender. The project is still a work in progress, and generated meshes can also be used as a starting point for 3D printing tests.
 
 This workspace now keeps the local helper files organized into a few simple folders:
@@ -40,6 +42,12 @@ Support:
 - If someone wants to support development, the donation page is:
   `https://ko-fi.com/3dvisualmesh`
 - Donations are optional and help fund more app work, plugin support, cleanup tools, and future updates.
+
+Feedback:
+
+- If you hit a real bug, open a `Bug Report` issue.
+- If a mesh comes out wrong, open a `Mesh Quality Report` issue with screenshots and hardware info.
+- Good reports should include your GPU, VRAM, RAM, Windows version, subject type, and result screenshots.
 
 Notes:
 
