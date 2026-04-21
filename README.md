@@ -7,6 +7,7 @@ This workspace now keeps the local helper files organized into a few simple fold
 - `app/` - the real app code
 - `installer/` - release-package and Windows installer build scripts
 - `launchers/` - local `.bat` launchers
+- `marketing/` - launch, sponsor, and internet-post copy
 - `website/` - public project site for downloads, docs, and open-source landing page
 - `START_HERE_EASY.txt` - very short friend-facing startup guide
 - `requirements_one_click_windows_amd.txt` - one-file AMD bootstrap stack
