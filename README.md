@@ -1,5 +1,7 @@
 # 3DVisual Mesh (BETA) (Version 0.1.0) Files
 
+3DVisual Mesh is a practical local image-to-mesh helper for Windows. Results are not guaranteed to come out as a 100% finished production mesh every time, and many outputs still benefit from light cleanup or polish in Blender. The project is still a work in progress, and generated meshes can also be used as a starting point for 3D printing tests.
+
 This workspace now keeps the local helper files organized into a few simple folders:
 
 - `app/` - the real app code
