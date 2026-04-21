@@ -1,0 +1,6 @@
+PLUGIN_NAME = "Example Plugin"
+PLUGIN_DESCRIPTION = "Shows the smallest valid drop-in plugin for 3DVisual Mesh."
+
+
+def register(app):
+    app.append_status("Example Plugin loaded.")

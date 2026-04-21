@@ -1,0 +1,45 @@
+3DVisual Mesh (BETA) (Version 0.1.0) - Quick Friend Setup
+
+What this package is:
+- the app source
+- launchers
+- assets
+- Blender add-on
+
+What this package does NOT include:
+- AMD or NVIDIA driver support on the machine
+- model weights and Hugging Face cache before first run
+
+Fastest start:
+
+1. Double-click:
+   Install 3DVisual Mesh (BETA) (Version 0.1.0).bat
+2. On first run it will try to:
+   - copy the app into your local Programs folder
+   - create Desktop and Start Menu shortcuts
+   - find or install Python 3.12
+   - create a local venv inside this package
+   - detect AMD or NVIDIA automatically
+   - install the matching Windows GPU Python packages
+   - download Hunyuan3D-2 into this package
+   - start the native app
+3. First run can take a while because packages and model files are large.
+
+If it still does not start, install these official downloads first:
+- Python 3.12 or newer: https://www.python.org/downloads/
+- AMD Windows driver: https://www.amd.com/en/support/download/drivers.html
+- NVIDIA Windows driver: https://www.nvidia.com/Download/index.aspx
+- Blender: https://www.blender.org/download/
+- Git for Windows (optional): https://git-scm.com/download/win
+
+If someone wants manual control instead:
+- Start 3DVisual Mesh (BETA) (Version 0.1.0).bat
+- launch_3dvisual_mesh.bat
+- launch_native_hunyuan_mesh_app.bat
+- launch_3dvisual_mesh_custom_paths_example.bat
+
+Notes:
+- The native desktop app is the main version.
+- CPU-only and Intel-only are not the intended path for this package.
+- Mesh quality still depends heavily on clean references, multiple good views, and Blender cleanup for production use.
+- The bootstrap still cannot install GPU drivers for them. The correct AMD or NVIDIA driver on that PC still matters.

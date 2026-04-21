@@ -1,0 +1,40 @@
+3DVisual Mesh (BETA) (Version 0.1.0) - START HERE
+
+Best start:
+1. Unzip this folder anywhere.
+2. Double-click:
+   Install 3DVisual Mesh (BETA) (Version 0.1.0).bat
+3. After install, use the new Desktop or Start Menu shortcut.
+
+Portable mode:
+- You can still run:
+  Start 3DVisual Mesh (BETA) (Version 0.1.0).bat
+
+What the install path does:
+- copies the app into your local Programs folder
+- creates Desktop and Start Menu shortcuts
+- launches the same bootstrap flow on first run
+
+What the bootstrap launcher does:
+- finds or installs Python 3.12
+- creates a local Python environment inside this folder
+- detects AMD or NVIDIA
+- installs the matching torch stack
+- downloads Hunyuan3D-2 into this folder
+- opens the app
+
+Important:
+- first run needs internet
+- first run can take a while
+- AMD and NVIDIA are supported
+- CPU-only is not the intended path
+
+If it still does not work, install these official downloads first:
+- Python: https://www.python.org/downloads/
+- AMD driver: https://www.amd.com/en/support/download/drivers.html
+- NVIDIA driver: https://www.nvidia.com/Download/index.aspx
+- Blender: https://www.blender.org/download/
+- Git for Windows (optional): https://git-scm.com/download/win
+
+Then run:
+Install 3DVisual Mesh (BETA) (Version 0.1.0).bat

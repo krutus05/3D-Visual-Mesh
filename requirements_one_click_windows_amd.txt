@@ -1,0 +1,8 @@
+-r requirements_one_click_common.txt
+rocm @ https://repo.radeon.com/rocm/windows/rocm-rel-7.2/rocm-7.2.0.dev0.tar.gz#sha256=18cec156ac620c1a2ad84266fbb9a376d98f2a80b35f73bf98ac12032b0fd3d2
+rocm-sdk-core @ https://repo.radeon.com/rocm/windows/rocm-rel-7.2/rocm_sdk_core-7.2.0.dev0-py3-none-win_amd64.whl#sha256=f8dac46ea54d570dd73a694e9f6793e80889a8168dd484be57b0d2f65079dde3
+rocm-sdk-devel @ https://repo.radeon.com/rocm/windows/rocm-rel-7.2/rocm_sdk_devel-7.2.0.dev0-py3-none-win_amd64.whl#sha256=c1cfaf90dc1405f4ace20a74ba21e3160e630bcbf3b464c29a66865a9e0b1625
+rocm-sdk-libraries-custom @ https://repo.radeon.com/rocm/windows/rocm-rel-7.2/rocm_sdk_libraries_custom-7.2.0.dev0-py3-none-win_amd64.whl#sha256=29a155b8f0da7b4ea05481ba665dc08749462a66bfc7cee27a6976bdea41f0cc
+torch @ https://repo.radeon.com/rocm/windows/rocm-rel-7.2/torch-2.9.1%2Brocmsdk20260116-cp312-cp312-win_amd64.whl#sha256=acd7a029ad3e9f86c36b6a1c9baf191231487be85b35675a17c08d68dd8c9475
+torchaudio @ https://repo.radeon.com/rocm/windows/rocm-rel-7.2/torchaudio-2.9.1%2Brocmsdk20260116-cp312-cp312-win_amd64.whl#sha256=e755c5827f571183cf54ded0b025e3dc349e49351fa345b8f05d4732ffa27107
+torchvision @ https://repo.radeon.com/rocm/windows/rocm-rel-7.2/torchvision-0.24.1%2Brocmsdk20260116-cp312-cp312-win_amd64.whl#sha256=3b19af6d42e1ff39d8e202f81f2751545bf11a62366cff2d1bd7ab592552522f

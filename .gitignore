@@ -1,0 +1,17 @@
+.runtime/
+.vendor/
+dist/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+launchers/preview_cache/
+launchers/sheet_cache/
+launchers/mentor_cases/
+launchers/3dvisual_mesh.log
+launchers/app_settings.json
+
+.DS_Store
+Thumbs.db
+Desktop.ini
