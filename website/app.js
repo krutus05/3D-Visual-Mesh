@@ -10,7 +10,7 @@ const PUBLIC_LINKS = {
   repo: "https://github.com/krutus05/3D-Visual-Mesh",
   releases: "https://github.com/krutus05/3D-Visual-Mesh/releases",
   downloadInstaller: "https://github.com/krutus05/3D-Visual-Mesh/releases/download/v0.1.0/3DVisualMeshSetup_0.1.0.exe",
-  downloadPortable: "https://github.com/krutus05/3D-Visual-Mesh/releases/download/v0.1.0/3DVisual%20Mesh%20Share%20(BETA)%20(Version%200.1.0).zip",
+  downloadPortable: "https://github.com/krutus05/3D-Visual-Mesh/releases/download/v0.1.0/3DVisual.Mesh.Share.BETA.Version.0.1.0.zip",
   issues: "https://github.com/krutus05/3D-Visual-Mesh/issues",
   donate: "https://ko-fi.com/3dvisualmesh",
 };
