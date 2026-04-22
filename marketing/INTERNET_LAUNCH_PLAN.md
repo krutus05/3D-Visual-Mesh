@@ -152,3 +152,9 @@ Ask testers to report:
 - GitHub Sponsors docs: `https://docs.github.com/en/sponsors/sponsoring-open-source-contributors`
 - Product Hunt launch page: `https://www.producthunt.com/launch`
 - Hacker News guidelines: `https://news.ycombinator.com/newsguidelines.html`
+
+## Files prepared in this repo
+
+- `marketing/PRODUCT_HUNT_SUBMISSION.md`
+- `marketing/HACKER_NEWS_POST.md`
+- `marketing/REDDIT_POSTS.md`
