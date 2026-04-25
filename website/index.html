@@ -50,13 +50,17 @@
         </p>
 
         <div class="hero-actions">
-          <a class="button primary" data-link="downloadInstaller" data-download="installer" href="#">Download Windows Installer</a>
+          <a class="button primary" data-link="downloadPortable" data-download="portable" href="#">Download Portable Beta</a>
           <a class="button secondary" data-link="repo" href="#">View GitHub</a>
           <a class="button ghost" data-link="donate" href="#">Support Development</a>
         </div>
 
         <p class="warning-note">
           Beta 0.1.1 - meshes are not guaranteed to be fully finished. NVIDIA support is included but still testing.
+        </p>
+        <p class="section-copy">
+          The current public beta package includes <strong>Start 3DVisual Mesh.exe</strong> and
+          <strong>Repair Install.exe</strong> so normal users do not need to launch `.bat` files first.
         </p>
       </div>
 
@@ -193,7 +197,7 @@
       <div class="section-head">
         <div>
           <span class="eyebrow">Downloads</span>
-          <h2>Choose the smoothest setup path</h2>
+          <h2>Choose the right Windows package</h2>
         </div>
         <p class="section-copy">
           Recommended for most users: choose the Full Offline Package for your GPU.
@@ -202,42 +206,47 @@
         <p class="section-copy">
           v0.1.1 Beta focuses on workflow, hardware safety, mesh guidance, and better reference/detail handling.
         </p>
+        <p class="section-copy">
+          The public package you can download right now is the portable beta bundle.
+          Extract it, then double-click <strong>Start 3DVisual Mesh.exe</strong>.
+          If something fails, use <strong>Repair Install.exe</strong>.
+        </p>
       </div>
 
       <div class="downloads-grid">
         <article class="download-card">
           <span class="card-label">Recommended for NVIDIA</span>
           <h3>NVIDIA Full Offline Package</h3>
-          <p>Large download, smoother setup. Includes local NVIDIA dependency files where possible so setup does not need to download everything later.</p>
+          <p>Built for smoother setup with local NVIDIA dependencies and launcher EXEs, but public hosting is still pending because this archive is over 30 GB.</p>
           <div class="card-actions">
-            <a class="button primary" data-link="downloadNvidiaFullOffline" data-download="nvidiaFullOffline" data-coming-soon="true" href="#">Download NVIDIA Full Offline</a>
+            <a class="button secondary" data-link="downloadNvidiaFullOffline" data-download="nvidiaFullOffline" data-coming-soon="true" href="#">Offline Hosting Pending</a>
           </div>
         </article>
 
         <article class="download-card">
           <span class="card-label">Recommended for AMD</span>
           <h3>AMD Full Offline Package</h3>
-          <p>Large download, smoother setup. Includes local AMD dependency files where possible so setup does not need to download everything later.</p>
+          <p>Built for smoother setup with local AMD dependencies and launcher EXEs, but public hosting is still pending because this archive is over 30 GB.</p>
           <div class="card-actions">
-            <a class="button primary" data-link="downloadAmdFullOffline" data-download="amdFullOffline" data-coming-soon="true" href="#">Download AMD Full Offline</a>
+            <a class="button secondary" data-link="downloadAmdFullOffline" data-download="amdFullOffline" data-coming-soon="true" href="#">Offline Hosting Pending</a>
           </div>
         </article>
 
         <article class="download-card">
-          <span class="card-label">Small download</span>
+          <span class="card-label">Installer path</span>
           <h3>Online Installer</h3>
-          <p>Small installer. Requires internet during setup and may download dependencies on first run.</p>
+          <p>The smaller installer path is planned for v0.1.1, but the public installer EXE is not uploaded yet. Use the portable beta package for now.</p>
           <div class="card-actions">
-            <a class="button secondary" data-link="downloadInstaller" data-download="installer" href="#">Download Online Installer</a>
+            <a class="button secondary" data-link="downloadInstaller" data-download="installer" data-coming-soon="true" href="#">Installer Coming Soon</a>
           </div>
         </article>
 
         <article class="download-card">
-          <span class="card-label">Advanced users</span>
+          <span class="card-label">Live now</span>
           <h3>Portable Source Package</h3>
-          <p>For developers or advanced users who want the project files and do not mind a more hands-on setup.</p>
+          <p>Includes <strong>Start 3DVisual Mesh.exe</strong>, <strong>Repair Install.exe</strong>, and the fallback scripts under <strong>resources/launchers</strong>.</p>
           <div class="card-actions">
-            <a class="button secondary" data-link="downloadPortable" data-download="portable" href="#">Download Portable Source</a>
+            <a class="button primary" data-link="downloadPortable" data-download="portable" href="#">Download Portable Beta</a>
           </div>
         </article>
       </div>

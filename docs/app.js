@@ -18,8 +18,20 @@ const PUBLIC_LINKS = {
   donate: "https://ko-fi.com/3dvisualmesh",
 };
 
-function showComingSoonMessage() {
-  window.alert(`${RELEASE_VERSION_LABEL} package is coming soon.`);
+const DOWNLOAD_NOTICES = {
+  downloadNvidiaFullOffline:
+    "The NVIDIA full offline package is built locally with launcher EXEs, but public hosting is still pending because the archive is over 30 GB. Use the portable beta package for now.",
+  downloadAmdFullOffline:
+    "The AMD full offline package is built locally with launcher EXEs, but public hosting is still pending because the archive is over 30 GB. Use the portable beta package for now.",
+  downloadInstaller:
+    "The v0.1.1 online installer is not uploaded yet. Use the portable beta package with Start 3DVisual Mesh.exe for now.",
+};
+
+function showComingSoonMessage(downloadKey) {
+  const message =
+    DOWNLOAD_NOTICES[downloadKey] ||
+    `${RELEASE_VERSION_LABEL} package is coming soon.`;
+  window.alert(message);
 }
 
 function wireLinks() {
@@ -42,7 +54,7 @@ function wireLinks() {
 function openDonationModal(downloadKey) {
   const targetHref = PUBLIC_LINKS[downloadKey];
   if (!targetHref) {
-    showComingSoonMessage();
+    showComingSoonMessage(downloadKey);
     return;
   }
 
@@ -85,11 +97,12 @@ function wireDonationModal() {
 
   for (const node of document.querySelectorAll("[data-coming-soon]")) {
     node.addEventListener("click", (event) => {
-      if (PUBLIC_LINKS[node.getAttribute("data-link")]) {
+      const key = node.getAttribute("data-link");
+      if (PUBLIC_LINKS[key]) {
         return;
       }
       event.preventDefault();
-      showComingSoonMessage();
+      showComingSoonMessage(key);
     });
   }
 
