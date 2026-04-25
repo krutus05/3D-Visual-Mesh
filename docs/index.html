@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>3DVisual Mesh Hub</title>
+  <title>3DVisual Mesh</title>
   <meta
     name="description"
-    content="Official releases and community plugins for 3DVisual Mesh. Curated updates, searchable plugin pages, and a clean path toward an open creator hub."
+    content="Turn images into 3D meshes on Windows. Local beta image-to-3D mesh generation for AMD and NVIDIA."
   >
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,429 +19,302 @@
 <body>
   <div class="page-glow page-glow-left"></div>
   <div class="page-glow page-glow-right"></div>
-  <div class="mesh-grid"></div>
 
   <header class="topbar">
-    <a class="brand" href="#top" aria-label="3DVisual Mesh Hub Home">
+    <a class="brand" href="#top" aria-label="3DVisual Mesh Home">
       <div class="brand-badge">3D</div>
       <div class="brand-copy">
-        <span class="eyebrow">Creator Hub MVP</span>
-        <strong>3DVisual Mesh Hub</strong>
+        <strong>3DVisual Mesh</strong>
       </div>
     </a>
 
-    <nav class="nav">
-      <a href="#official">Official</a>
-      <a href="#plugins">Plugins</a>
-      <a href="#flow">Flow</a>
-      <a href="#backend">Backend</a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#downloads">Download</a>
+      <a href="#features">Features</a>
+      <a href="#requirements">Requirements</a>
       <a href="#roadmap">Roadmap</a>
+      <a data-link="repo" href="#">GitHub</a>
+      <a href="#support">Support</a>
     </nav>
-
-    <div class="topbar-actions">
-      <a class="button secondary" data-link="donate" href="#">Support</a>
-      <a class="button ghost" data-link="repo" href="#">GitHub</a>
-      <a class="button primary" data-link="downloadInstaller" data-download="installer" href="#">Download App</a>
-    </div>
   </header>
 
   <main id="top">
     <section class="hero shell-card">
       <div class="hero-copy">
-        <p class="eyebrow">Official Releases + Community Plugins</p>
-        <h1>A clean hub for app updates now, community tools next.</h1>
+        <span class="eyebrow">Windows Beta Release</span>
+        <h1>Turn images into 3D meshes on Windows.</h1>
         <p class="lede">
-          This first version is not a giant app store. It is a focused home for official
-          3DVisual Mesh releases, plugin discovery, safe user submissions, and a moderated path
-          for upgrades and mods.
+          3DVisual Mesh is a beta Windows app for generating 3D mesh outputs from images.
+          Results may need cleanup or light polish, especially for hidden backsides, hands,
+          feet, cape or cloth, and 3D-print use.
         </p>
 
         <div class="hero-actions">
-          <a class="button primary" data-link="downloadInstaller" data-download="installer" href="#">Get Windows Installer</a>
-          <a class="button secondary" href="#plugins">Browse Plugins</a>
+          <a class="button primary" data-link="downloadInstaller" data-download="installer" href="#">Download Windows Installer</a>
+          <a class="button secondary" data-link="repo" href="#">View GitHub</a>
           <a class="button ghost" data-link="donate" href="#">Support Development</a>
         </div>
 
-        <ul class="hero-points">
-          <li>You control official releases.</li>
-          <li>Users can submit plugins and mods.</li>
-          <li>Nothing community-made goes public without review.</li>
-          <li>Windows launcher supports both AMD Radeon and NVIDIA GPU paths.</li>
-        </ul>
+        <p class="warning-note">
+          Beta 0.1.1 - meshes are not guaranteed to be fully finished. NVIDIA support is included but still testing.
+        </p>
       </div>
 
       <aside class="hero-panel">
-        <div class="hero-status">
+        <div class="status-pill">
           <span class="status-dot"></span>
-          <span>Hub plan aligned with app version 0.1.0</span>
+          <span>Windows + AMD / NVIDIA</span>
         </div>
 
-        <div class="hero-metrics">
+        <div class="hero-stats">
           <article>
-            <span class="metric-label">Mode</span>
-            <strong>Curated Marketplace</strong>
+            <span class="stat-label">Build</span>
+            <strong>Beta 0.1.1</strong>
           </article>
           <article>
-            <span class="metric-label">Official Uploads</span>
-            <strong>Owner Only</strong>
+            <span class="stat-label">Mode</span>
+            <strong>Local App</strong>
           </article>
           <article>
-            <span class="metric-label">Plugin Uploads</span>
-            <strong>Accounts + Review</strong>
+            <span class="stat-label">GPU Paths</span>
+            <strong>AMD + NVIDIA</strong>
           </article>
           <article>
-            <span class="metric-label">Best Stack</span>
-            <strong>Next.js + Supabase</strong>
+            <span class="stat-label">Output</span>
+            <strong>GLB Mesh Workflow</strong>
           </article>
         </div>
       </aside>
     </section>
 
-    <section id="official" class="section-block">
+    <section id="features" class="shell-card section-card wide-card">
       <div class="section-head">
         <div>
-          <p class="eyebrow">Official Releases</p>
-          <h2>Owner-controlled downloads</h2>
+          <span class="eyebrow">What it does</span>
+          <h2>Focused on the beta app first</h2>
         </div>
         <p class="section-copy">
-          Official installers, portable builds, and changelogs stay separate from community uploads.
-          That keeps trust clear.
+          This homepage is about the current Windows app: download it, test it honestly,
+          and use Blender cleanup when the mesh needs polish.
         </p>
       </div>
 
-      <div class="release-feature shell-card">
-        <div class="release-feature-copy">
-          <span class="pill">Latest Stable Beta</span>
-          <h3>3DVisual Mesh 0.1.0</h3>
-          <p>
-            Local Windows release with installer packaging, portable share bundle, Blender add-on,
-            AI assist hooks, and the current mesh workflow.
-          </p>
-          <div class="stack">
-            <a class="button primary" data-link="downloadInstaller" data-download="installer" href="#">Installer</a>
-            <a class="button secondary" data-link="downloadPortable" data-download="portable" href="#">Portable Zip</a>
-            <a class="button ghost" data-link="releases" href="#">All Releases</a>
+      <div class="requirements-grid">
+        <article class="info-card">
+          <span class="card-label">Core</span>
+          <strong>Image to mesh</strong>
+          <p>Turns single images or guided references into a first-pass mesh output.</p>
+        </article>
+        <article class="info-card">
+          <span class="card-label">Platform</span>
+          <strong>Local Windows app</strong>
+          <p>Built for a local Windows workflow instead of a cloud-only setup.</p>
+        </article>
+        <article class="info-card">
+          <span class="card-label">GPU paths</span>
+          <strong>AMD plus NVIDIA</strong>
+          <p>AMD is the most tested path. NVIDIA is included but still beta and testing.</p>
+        </article>
+        <article class="info-card">
+          <span class="card-label">Cleanup</span>
+          <strong>Blender cleanup support</strong>
+          <p>Useful when you want to repair, smooth, or retopo after generation.</p>
+        </article>
+        <article class="info-card">
+          <span class="card-label">Use cases</span>
+          <strong>Props and print tests</strong>
+          <p>Useful for game props, rough character bases, and 3D-print testing.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="shell-card section-card wide-card">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">What to expect</span>
+          <h2>Honest beta expectations</h2>
+        </div>
+        <p class="section-copy">This is a practical mesh starter, not a guaranteed finished production asset.</p>
+      </div>
+
+      <div class="section-grid">
+        <article class="info-card">
+          <span class="card-label">Hidden geometry</span>
+          <strong>Backsides are estimated</strong>
+          <p>If the source only shows the front, hidden backsides and undersides are still guessed.</p>
+        </article>
+        <article class="info-card">
+          <span class="card-label">Weak parts</span>
+          <strong>Hands, feet, and cloth may need repair</strong>
+          <p>Those areas are still among the most likely to need manual cleanup or repair presets.</p>
+        </article>
+        <article class="info-card">
+          <span class="card-label">Polish</span>
+          <strong>Some outputs need manual work</strong>
+          <p>Cleanup in Blender is still normal, especially for harder characters and thin cloth.</p>
+        </article>
+        <article class="info-card">
+          <span class="card-label">Production</span>
+          <strong>Not guaranteed production-ready</strong>
+          <p>Good for testing, iteration, and base meshes, but not a promise of final-ready topology.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="requirements" class="shell-card section-card wide-card">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Requirements</span>
+          <h2>Current hardware guidance</h2>
+        </div>
+        <p class="section-copy">Minimum suggested: 8 GB VRAM, 16 GB RAM, 6-core CPU.</p>
+      </div>
+
+      <div class="requirements-grid">
+        <article class="info-card">
+          <span class="card-label">Minimum suggested</span>
+          <strong>8 GB VRAM</strong>
+          <p>16 GB RAM / 6-core CPU</p>
+        </article>
+        <article class="info-card">
+          <span class="card-label">Recommended</span>
+          <strong>12-16 GB VRAM</strong>
+          <p>32 GB RAM / 8-core CPU</p>
+        </article>
+        <article class="info-card">
+          <span class="card-label">Weak PCs</span>
+          <strong>Expect slower runs</strong>
+          <p>Lower-end setups may be slow, unstable, or fail on complex meshes.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="downloads" class="shell-card section-card wide-card">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Downloads</span>
+          <h2>Choose the smoothest setup path</h2>
+        </div>
+        <p class="section-copy">
+          Recommended for most users: choose the Full Offline Package for your GPU.
+          Full offline packages may be large, around 10-35 GB. This is intentional to reduce setup problems.
+        </p>
+        <p class="section-copy">
+          v0.1.1 Beta focuses on workflow, hardware safety, mesh guidance, and better reference/detail handling.
+        </p>
+      </div>
+
+      <div class="downloads-grid">
+        <article class="download-card">
+          <span class="card-label">Recommended for NVIDIA</span>
+          <h3>NVIDIA Full Offline Package</h3>
+          <p>Large download, smoother setup. Includes local NVIDIA dependency files where possible so setup does not need to download everything later.</p>
+          <div class="card-actions">
+            <a class="button primary" data-link="downloadNvidiaFullOffline" data-download="nvidiaFullOffline" data-coming-soon="true" href="#">Download NVIDIA Full Offline</a>
           </div>
-        </div>
-        <div class="release-feature-meta">
-          <div class="meta-row">
-            <span>Channel</span>
-            <strong>Beta</strong>
+        </article>
+
+        <article class="download-card">
+          <span class="card-label">Recommended for AMD</span>
+          <h3>AMD Full Offline Package</h3>
+          <p>Large download, smoother setup. Includes local AMD dependency files where possible so setup does not need to download everything later.</p>
+          <div class="card-actions">
+            <a class="button primary" data-link="downloadAmdFullOffline" data-download="amdFullOffline" data-coming-soon="true" href="#">Download AMD Full Offline</a>
           </div>
-          <div class="meta-row">
-            <span>Platform</span>
-            <strong>Windows</strong>
+        </article>
+
+        <article class="download-card">
+          <span class="card-label">Small download</span>
+          <h3>Online Installer</h3>
+          <p>Small installer. Requires internet during setup and may download dependencies on first run.</p>
+          <div class="card-actions">
+            <a class="button secondary" data-link="downloadInstaller" data-download="installer" href="#">Download Online Installer</a>
           </div>
-          <div class="meta-row">
-            <span>GPU Paths</span>
-            <strong>AMD + NVIDIA</strong>
+        </article>
+
+        <article class="download-card">
+          <span class="card-label">Advanced users</span>
+          <h3>Portable Source Package</h3>
+          <p>For developers or advanced users who want the project files and do not mind a more hands-on setup.</p>
+          <div class="card-actions">
+            <a class="button secondary" data-link="downloadPortable" data-download="portable" href="#">Download Portable Source</a>
           </div>
-          <div class="meta-row">
-            <span>Install Style</span>
-            <strong>One-click bootstrap</strong>
-          </div>
-        </div>
+        </article>
       </div>
 
-      <div id="release-list" class="card-grid release-grid"></div>
+      <p class="section-copy">
+        You still need a working AMD or NVIDIA GPU driver installed. Online installer is smaller but less reliable for weak internet.
+        NVIDIA support is included but still beta and testing because most testing was done on AMD.
+      </p>
     </section>
 
-    <section id="install-guide" class="section-block">
+    <section id="roadmap" class="shell-card section-card wide-card">
       <div class="section-head">
         <div>
-          <p class="eyebrow">Install Guide</p>
-          <h2>Simple setup for AMD and NVIDIA users</h2>
+          <span class="eyebrow">Roadmap</span>
+          <h2>What comes next</h2>
         </div>
-        <p class="section-copy">
-          The Windows launcher is built to support both GPU families. On first run it detects the
-          hardware path and installs the matching environment.
-        </p>
-      </div>
-
-      <div class="backend-grid">
-        <article class="shell-card backend-card">
-          <h3>What normal users do</h3>
-          <ol class="detail-list">
-            <li>Download the installer or portable zip.</li>
-            <li>Start the app.</li>
-            <li>Wait for first setup to finish.</li>
-            <li>The launcher picks the correct GPU path automatically.</li>
-          </ol>
-        </article>
-
-        <article class="shell-card backend-card">
-          <h3>GPU support</h3>
-          <ul class="detail-list">
-            <li><strong>AMD Radeon:</strong> supported</li>
-            <li><strong>NVIDIA:</strong> beta support right now</li>
-            <li><strong>Windows:</strong> primary target</li>
-            <li><strong>First run:</strong> internet needed for bootstrap setup</li>
-          </ul>
-        </article>
-
-        <article class="shell-card backend-card">
-          <h3>Minimum I currently suggest</h3>
-          <ul class="detail-list">
-            <li><strong>VRAM:</strong> 8 GB</li>
-            <li><strong>RAM:</strong> 16 GB</li>
-            <li><strong>CPU:</strong> 6-core</li>
-          </ul>
-          <p>
-            This is the lowest setup I currently suggest. It may still be slow, unstable, or give weaker results on this level,
-            especially on harder subjects.
-          </p>
-        </article>
-
-        <article class="shell-card backend-card">
-          <h3>NVIDIA test note</h3>
-          <p>
-            NVIDIA support is still in a beta phase. Main development was done on AMD hardware, so I would really appreciate
-            real NVIDIA feedback.
-          </p>
-          <p>
-            If you test it and hit issues, have ideas, or want to help, please email
-            <a class="inline-link" href="mailto:yanis.thispc.email@gmail.com">yanis.thispc.email@gmail.com</a>.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <section id="link-setup" class="section-block">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow">Release Link Setup</p>
-          <h2>How to make the download buttons work for real</h2>
-        </div>
-        <p class="section-copy">
-          This part is simple: upload your files somewhere public, then paste those public links into
-          <code>website/app.js</code>.
-        </p>
-      </div>
-
-      <div class="backend-grid">
-        <article class="shell-card backend-card">
-          <h3>Fields you replace</h3>
-          <ul class="detail-list">
-            <li><code>repo</code> = your GitHub repo URL</li>
-            <li><code>releases</code> = your GitHub Releases page</li>
-            <li><code>downloadInstaller</code> = direct public installer URL</li>
-            <li><code>downloadPortable</code> = direct public portable zip URL</li>
-            <li><code>issues</code> = your bug report page</li>
-            <li><code>donate</code> = your Ko-fi page</li>
-          </ul>
-        </article>
-
-        <article class="shell-card backend-card">
-          <h3>Easy order</h3>
-          <ol class="detail-list">
-            <li>Upload the installer and zip to GitHub Releases.</li>
-            <li>Copy the public file URLs.</li>
-            <li>Open <code>website/app.js</code>.</li>
-            <li>Paste the real URLs into <code>PUBLIC_LINKS</code>.</li>
-            <li>Upload the website folder.</li>
-          </ol>
-        </article>
-      </div>
-
-      <div class="doc-links shell-card">
-        <div>
-          <h3>No-problem version</h3>
-          <p>
-            If you forget what goes where, open the website readme. I added the exact file names and
-            a copy-paste example for the installer and portable download links.
-          </p>
-        </div>
-        <div class="stack">
-          <a class="button secondary" href="./README.md">Open Website Readme</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="plugins" class="section-block">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow">Plugin Hub</p>
-          <h2>Searchable plugin pages with moderation</h2>
-        </div>
-        <p class="section-copy">
-          Users can create accounts, upload plugin packages, and submit updates. Public visitors only
-          see approved entries.
-        </p>
-      </div>
-
-      <div class="plugin-toolbar shell-card">
-        <label class="search-field" for="plugin-search">
-          <span>Search plugins</span>
-          <input id="plugin-search" type="search" placeholder="Search cleanup, export, Blender, retopo...">
-        </label>
-
-        <label class="select-field" for="plugin-filter">
-          <span>Filter</span>
-          <select id="plugin-filter">
-            <option value="all">All</option>
-            <option value="approved">Approved</option>
-            <option value="blender">Blender</option>
-            <option value="cleanup">Cleanup</option>
-            <option value="export">Export</option>
-            <option value="workflow">Workflow</option>
-          </select>
-        </label>
-
-        <div class="toolbar-actions">
-          <a class="button secondary" href="#flow">How uploads work</a>
-          <a class="button ghost" href="#backend">Database plan</a>
-        </div>
-      </div>
-
-      <div id="plugin-list" class="card-grid plugin-grid"></div>
-    </section>
-
-    <section id="flow" class="section-block">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow">Submission Flow</p>
-          <h2>How the site should behave in v1</h2>
-        </div>
-        <p class="section-copy">
-          The main goal is trust and clarity, not instant chaos.
-        </p>
-      </div>
-
-      <div class="flow-grid">
-        <article class="shell-card flow-card">
-          <span class="step-id">01</span>
-          <h3>Official Releases</h3>
-          <p>Only the owner account can upload app installers, portable zips, screenshots, and changelog text.</p>
-        </article>
-        <article class="shell-card flow-card">
-          <span class="step-id">02</span>
-          <h3>User Plugin Upload</h3>
-          <p>Registered users upload a plugin zip, version, tags, screenshots, short summary, and compatibility notes.</p>
-        </article>
-        <article class="shell-card flow-card">
-          <span class="step-id">03</span>
-          <h3>Pending Review</h3>
-          <p>New community uploads stay hidden until you approve, reject, or send them back for fixes.</p>
-        </article>
-        <article class="shell-card flow-card">
-          <span class="step-id">04</span>
-          <h3>Public Plugin Page</h3>
-          <p>Approved plugins get a clean public page with download links, version history, screenshots, and author info.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="backend" class="section-block">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow">Backend Structure</p>
-          <h2>Exact MVP shape</h2>
-        </div>
-        <p class="section-copy">
-          This is the smallest backend that still feels real instead of fake.
-        </p>
-      </div>
-
-      <div class="backend-grid">
-        <article class="shell-card backend-card">
-          <h3>Pages</h3>
-          <ul class="detail-list">
-            <li>Home</li>
-            <li>Official downloads</li>
-            <li>Plugin browser</li>
-            <li>Single plugin page</li>
-            <li>Sign up / log in</li>
-            <li>Upload plugin</li>
-            <li>Dashboard for my plugins</li>
-            <li>Admin review panel</li>
-          </ul>
-        </article>
-
-        <article class="shell-card backend-card">
-          <h3>Core Tables</h3>
-          <ul class="detail-list">
-            <li><code>profiles</code></li>
-            <li><code>official_releases</code></li>
-            <li><code>plugins</code></li>
-            <li><code>plugin_versions</code></li>
-            <li><code>plugin_images</code></li>
-            <li><code>plugin_tags</code></li>
-          </ul>
-        </article>
-
-        <article class="shell-card backend-card">
-          <h3>Storage Buckets</h3>
-          <ul class="detail-list">
-            <li><code>official-builds</code> for installer and zip</li>
-            <li><code>plugin-packages</code> for community zips</li>
-            <li><code>plugin-media</code> for screenshots and icons</li>
-          </ul>
-        </article>
-
-        <article class="shell-card backend-card">
-          <h3>Safety Rules</h3>
-          <ul class="detail-list">
-            <li>Community uploads default to pending</li>
-            <li>No random executables in plugin uploads for v1</li>
-            <li>Require plugin manifest metadata</li>
-            <li>Owner review before public listing</li>
-          </ul>
-        </article>
-      </div>
-
-      <div class="doc-links shell-card">
-        <div>
-          <h3>Included planning files</h3>
-          <p>
-            I added a concrete website MVP doc and a starter Supabase SQL schema so we can build this
-            without guessing later.
-          </p>
-        </div>
-        <div class="stack">
-          <a class="button secondary" href="./MVP_STRUCTURE.md">Open MVP Doc</a>
-          <a class="button secondary" href="./supabase_schema.sql">Open SQL Schema</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="roadmap" class="section-block">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow">Roadmap</p>
-          <h2>Best order to build this</h2>
-        </div>
-        <p class="section-copy">
-          Keep the launch realistic, then grow it.
-        </p>
+        <p class="section-copy">Safe, incremental upgrades first. Plugin and hub ideas stay in the future lane.</p>
       </div>
 
       <div class="roadmap-grid">
-        <article class="shell-card roadmap-card">
-          <span class="roadmap-state">Phase 1</span>
-          <h3>Curated release site</h3>
-          <p>Official download page, changelogs, screenshots, and a read-only plugin showcase.</p>
+        <article class="info-card">
+          <span class="card-label">Next</span>
+          <strong>Better installer</strong>
         </article>
-        <article class="shell-card roadmap-card">
-          <span class="roadmap-state">Phase 2</span>
-          <h3>Accounts + plugin upload</h3>
-          <p>Users can sign in, manage their plugin pages, and send packages for review.</p>
+        <article class="info-card">
+          <span class="card-label">Next</span>
+          <strong>Hardware profiles</strong>
         </article>
-        <article class="shell-card roadmap-card">
-          <span class="roadmap-state">Phase 3</span>
-          <h3>Ratings + verified authors</h3>
-          <p>Trusted creators, moderation notes, version stats, and better discovery filters.</p>
+        <article class="info-card">
+          <span class="card-label">Next</span>
+          <strong>Fast preview mode</strong>
         </article>
+        <article class="info-card">
+          <span class="card-label">Next</span>
+          <strong>Mesh repair</strong>
+        </article>
+        <article class="info-card">
+          <span class="card-label">Next</span>
+          <strong>Hands and feet repair</strong>
+        </article>
+        <article class="info-card">
+          <span class="card-label">Next</span>
+          <strong>Watertight / 3D print mode</strong>
+        </article>
+        <article class="info-card">
+          <span class="card-label">Later</span>
+          <strong>Plugin hub</strong>
+        </article>
+      </div>
+    </section>
+
+    <section id="support" class="shell-card section-card wide-card support-card">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Support</span>
+          <h2>Help keep development moving</h2>
+        </div>
+        <p class="section-copy">
+          Support is optional. If you want to help with testing, bug reports, or donations, use the links below.
+        </p>
+      </div>
+
+      <div class="support-actions">
+        <a class="button ghost" data-link="donate" href="#">Support Development</a>
+        <a class="button secondary" data-link="repo" href="#">View GitHub</a>
+        <a class="button secondary" data-link="issues" href="#">Report Issues</a>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <p>3DVisual Mesh Hub starts as a controlled release hub first so the community side can grow safely.</p>
+    <p>3DVisual Mesh is still beta. Meshes are not guaranteed to be fully finished and may need light polish.</p>
     <div class="footer-links">
-      <a data-link="donate" href="#">Support</a>
+      <a href="#downloads">Download</a>
+      <a href="#requirements">Requirements</a>
       <a data-link="repo" href="#">GitHub</a>
-      <a data-link="releases" href="#">Releases</a>
-      <a data-link="issues" href="#">Issues</a>
+      <a data-link="donate" href="#">Support</a>
     </div>
   </footer>
 
@@ -449,28 +322,23 @@
     <div class="modal-backdrop" data-close-modal="true"></div>
     <section class="donation-modal shell-card" role="dialog" aria-modal="true" aria-labelledby="donation-title">
       <button class="modal-close" type="button" data-close-modal="true" aria-label="Close support popup">X</button>
-      <p class="eyebrow">Optional Support</p>
-      <h2 id="donation-title">Want to support development before download?</h2>
+      <span class="eyebrow">Optional Support</span>
+      <h2 id="donation-title">Support before download?</h2>
       <p class="modal-copy">
-        Donations are optional, but they help keep improving the app, the plugin system, and future mesh quality work.
+        Donations are optional, but they help keep improving the app, repair tools, and future mesh quality work.
       </p>
       <div class="modal-warning">
         <h3>Before you download</h3>
-        <ul class="detail-list">
-          <li><strong>Minimum suggested:</strong> 8 GB VRAM, 16 GB RAM, 6-core CPU</li>
-          <li><strong>Important:</strong> this lower-end setup may still run slowly or not work well</li>
-          <li><strong>NVIDIA:</strong> current support is beta because development was mainly tested on AMD</li>
+        <ul class="bullet-list compact-list">
+          <li>Minimum suggested: 8 GB VRAM, 16 GB RAM, 6-core CPU</li>
+          <li>Meshes may need cleanup and manual polish</li>
+          <li>NVIDIA support is included but still testing</li>
         </ul>
-        <p class="modal-note">
-          NVIDIA feedback, bug reports, ideas, or help are welcome at
-          <a class="inline-link" href="mailto:yanis.thispc.email@gmail.com">yanis.thispc.email@gmail.com</a>.
-        </p>
       </div>
       <div class="modal-actions">
-        <a id="donate-link" class="button ghost" data-link="donate" href="#">Donate</a>
+        <a class="button ghost" data-link="donate" href="#">Support Development</a>
         <a id="continue-download-link" class="button primary" href="#">Continue To Download</a>
       </div>
-      <p class="modal-note">You can skip support and still download normally.</p>
     </section>
   </div>
 
