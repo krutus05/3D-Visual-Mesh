@@ -20,11 +20,11 @@ const PUBLIC_LINKS = {
 
 const DOWNLOAD_NOTICES = {
   downloadNvidiaFullOffline:
-    "The NVIDIA full offline package is built locally with launcher EXEs, but public hosting is still pending because the archive is over 30 GB. Use the portable beta package for now.",
+    "The NVIDIA full offline package is still too large for the current GitHub release flow. Use the portable beta package plus the NVIDIA Install Hotfix Pack on the website for now.",
   downloadAmdFullOffline:
-    "The AMD full offline package is built locally with launcher EXEs, but public hosting is still pending because the archive is over 30 GB. Use the portable beta package for now.",
+    "The AMD full offline package is still too large for the current GitHub release flow. Use the portable beta package plus the AMD Install Hotfix Pack on the website for now.",
   downloadInstaller:
-    "The v0.1.1 online installer is not uploaded yet. Use the portable beta package with Start 3DVisual Mesh.exe for now.",
+    "The v0.1.1 online installer is not uploaded yet. Use the portable beta package first, and if dependency install fails, apply the matching GPU Install Hotfix Pack from the Downloads section.",
 };
 
 function showComingSoonMessage(downloadKey) {
